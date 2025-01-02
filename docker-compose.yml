@@ -1,25 +1,25 @@
 version: '3.8'
 services:
   movies:
-    image: madhusk007/movies:latest
+    image: madhusk007/paymovies:latest
     ports:
       - "81:80"
     deploy:
       replicas: 3
   train:
-    image: madhusk007/train:latest
+    image: madhusk007/paytrain:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
   dth:
-    image: madhusk007/paytmdth:latest
+    image: madhusk007/paydth:latest
     ports:
       - "83:80"
     deploy:
       replicas: 3
   recharge:
-    image: madhusk007/paytmrecharge:latest
+    image: madhusk007/payrecharge:latest
     ports:
       - "84:80"
     deploy:
